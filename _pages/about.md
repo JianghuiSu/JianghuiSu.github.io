@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a first-year Master's student in Epidemiology and Health Statistics at the [School of Public Health](https://www.sph.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). I am fortunate to be advised by [Researcher Gao Pei](https://sph.pku.edu.cn/info/1180/3597.htm). My research interests include the methodology and applied research of medical statistics, data mining and statistical analysis of healthcare big data, and epidemiology of cardiovascular diseases.
+I am a first-year Master's student in Epidemiology and Health Statistics at the [School of Public Health](https://sph.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). I am fortunate to be advised by [Researcher Gao Pei](https://sph.pku.edu.cn/info/1180/3597.htm). My research interests include the methodology and applied research of medical statistics, data mining and statistical analysis of healthcare big data, and epidemiology of cardiovascular diseases.
 
 You can find my CV here: [Jianghui Su's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
