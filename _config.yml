@@ -23,7 +23,7 @@ repository               : "JianghuiSu/JianghuiSu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/sujianghui.png"
+  avatar           : "../images/sujianghui.png"
   name             : "Jianghui Su（苏江慧）"
   pronouns         : # example: "she/her"  
   bio              : "Peking University"
@@ -34,7 +34,7 @@ author:
 
   # Academic websites
   academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
+  # arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
