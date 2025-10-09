@@ -11,9 +11,10 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* 2025-      M.S. in Epidemiology and Health Statistics, Peking University
+* 2020-2025  Bachelor in Preventive Medicine, Wuhan University, Wuhan, China
+* 2020-2024  Bachelor in Computer Science and Technology, Wuhan University,Wuhan, China
+* 2017-2020  Senior high school student, elite middle school, Shijiazhuang, China
 
 Work experience
 ======
