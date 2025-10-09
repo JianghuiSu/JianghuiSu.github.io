@@ -6,6 +6,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
+I am a first-year Master's student in Epidemiology and Health Statistics at the [School of Public Health](https://www.sph.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). I am fortunate to be advised by [Researcher Gao Pei](https://sph.pku.edu.cn/info/1180/3597.htm). My research interests include the methodology and applied research of medical statistics, data mining and statistical analysis of healthcare big data, and epidemiology of cardiovascular diseases.
+
+You can find my CV here: [Jianghui Su's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
+
+[Email](mailto:sujianghui@bjmu.edu.cn) / [Github](https://github.com/JianghuiSu) / [Wechat](../images/wechat.jpg) 
 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
