@@ -3,7 +3,7 @@ title: "Python数据可视化与模型评估实战"
 collection: portfolio
 type: "Data Analysis"
 permalink: /portfolio/python-data-visualization-practice
-date: 2024-01-01
+date: 2026-01-10
 excerpt: "掌握Matplotlib、Seaborn等工具，通过EDA、模型评估、无监督学习及SHAP解释实现数据可视化全流程"
 header:
   teaser: /images/portfolio/python-data-visualization-practice/age_distribution.png
