@@ -22,7 +22,7 @@ tech_stack:
 ---
 
 ## 项目背景
-儿童重症监护室（PICU）患者的病情通常较为严重，死亡风险较高。及时准确地预测患者的死亡风险，有助于临床医生制定更有效的治疗方案，改善患者预后。本项目旨在利用机器学习技术，基于患者的临床数据（如年龄、实验室检查结果等），构建可靠的死亡风险预测模型，并通过模型解释技术（SHAP）揭示关键影响因素。
+儿童重症监护室（PICU）患者的病情通常较为严重，死亡风险较高。及时准确地预测患者的死亡风险，有助于临床医生制定更有效的治疗方案，改善患者预后。本项目旨在利用机器学习技术，基于患者的临床数据（如年龄、实验室检查结果等），构建和评估死亡风险预测模型，并通过模型解释技术（SHAP）揭示关键影响因素。
 
 ## 核心实现
 
@@ -72,6 +72,44 @@ def train_and_tune_models(X_train, y_train):
     svc_grid.fit(X_train, y_train)
     best_svc = svc_grid.best_estimator_
     return best_lr, best_rf, best_svc
+```
+
+### 无监督学习
+```python
+def unsupervised_analysis(data):
+    # 1. 聚类数据预处理（选取实验室特征，避免结局变量干扰）
+    cluster_features = [col for col in data.columns if col.startswith('lab_')]
+    # 缺失值填充+标准化
+    imputer = SimpleImputer(strategy='mean')
+    data_cluster_imputed = pd.DataFrame(imputer.fit_transform(data[cluster_features]), columns=cluster_features)
+    scaler = StandardScaler()
+    data_cluster_scaled = scaler.fit_transform(data_cluster_imputed)
+    # 2. 肘部法则确定最佳K值（K=1-10）
+    wcss = []
+    for k in range(1, 11):
+        kmeans = KMeans(n_clusters=k, init='k-means++', random_state=42)
+        kmeans.fit(data_cluster_scaled)
+        wcss.append(kmeans.inertia_)
+    # 绘制肘部图
+    plt.figure(figsize=(10, 5))
+    plt.plot(range(1, 11), wcss, marker='o', linestyle='--', color='darkblue')
+    plt.xlabel('簇数 K', fontsize=10)
+    plt.ylabel('簇内平方和 (WCSS)', fontsize=10)
+    plt.title('KMeans肘部法则图（确定最佳簇数）', fontsize=12)
+    plt.grid(alpha=0.3)
+    plt.tight_layout()
+    plt.savefig('kmeans_elbow_plot.png', dpi=300, bbox_inches='tight')
+    plt.close()
+    print("肘部法则图已保存为：kmeans_elbow_plot.png")
+    # 3. 最佳K值聚类（基于肘部图选择K=3）
+    best_k = 3
+    kmeans = KMeans(n_clusters=best_k, init='k-means++', random_state=42)
+    cluster_labels = kmeans.fit_predict(data_cluster_scaled)
+    # 4. 聚类评估（轮廓系数）
+    silhouette_avg = silhouette_score(data_cluster_scaled, cluster_labels)
+    # 5. 聚类与临床结局关联分析
+    data_with_cluster = data.copy()
+    data_with_cluster['cluster'] = cluster_labels
 ```
 
 ### 模型解释（SHAP）
