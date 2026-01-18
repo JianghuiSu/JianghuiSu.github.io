@@ -102,11 +102,11 @@ def shap_explanation(best_lr, best_rf, X_train, X_test, selected_features):
 ### 特征重要性
 随机森林模型的特征重要性：
 ![特征重要性](/images/portfolio/pediatric-icu-mortality-prediction/feature_importance.png)
-**分析结论**：lab_5235_max（某实验室指标的最大值）是最重要的特征，其次是lab_5237_min和age_month，这些特征对患者死亡风险的预测贡献最大。
+**分析结论**：lab_5257_min（某实验室指标的最小值）是最重要的特征，其次是lab_5237_min和lab_5235_max，这些特征对患者死亡风险的预测贡献最大。
 
-### SHAP解释
+### SHAP分析
 随机森林模型的SHAP依赖图：
 ![SHAP依赖图](/images/portfolio/pediatric-icu-mortality-prediction/shap_dependence_rf.png)
-**分析结论**：SHAP值显示，lab_5235_max的值越高，患者死亡风险越大；而age_month的值与死亡风险的关系较为复杂，需要结合其他特征综合判断。
+**分析结论**：SHAP值显示，lab_5257_min的值越高，患者死亡风险越小；而age_month的值与死亡风险的关系较为复杂，需要结合其他特征综合判断。
 
 ---
