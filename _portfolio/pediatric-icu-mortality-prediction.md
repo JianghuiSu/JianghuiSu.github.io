@@ -147,4 +147,16 @@ def shap_explanation(best_lr, best_rf, X_train, X_test, selected_features):
 ![SHAP依赖图](/images/portfolio/pediatric-icu-mortality-prediction/shap_dependence_rf.png)
 **分析结论**：SHAP值显示，lab_5257_min的值越高，患者死亡风险越小；而age_month的值与死亡风险的关系较为复杂，需要结合其他特征综合判断。
 
+## 项目附件
+为方便复现研究或查看详细内容，以下是本项目的完整代码和分析报告：
+
+| 资源类型       | 文件名                          | 操作链接                                                                 |
+|----------------|---------------------------------|--------------------------------------------------------------------------|
+| 完整源代码     | full_code.py          | [直接下载](https://github.com/jianghuisu/jianghuisu.github.io/raw/main/_portfolio/pediatric-icu-files/full_code.py) |
+| 详细分析报告   | analysis_report.pdf         | [在线预览/下载](/_portfolio/pediatric-icu-files/analysis_report.pdf) |
+
+### 资源说明
+- 代码文件包含数据预处理、模型构建、无监督聚类、SHAP 解释等全流程代码。
+- 报告内容：包含详细的研究方法、结果解读、局限性分析等全流程细节
+
 ---
