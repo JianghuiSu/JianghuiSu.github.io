@@ -152,7 +152,7 @@ def shap_explanation(best_lr, best_rf, X_train, X_test, selected_features):
 
 | 资源类型       | 文件名                          | 操作链接                                                                 |
 |----------------|---------------------------------|--------------------------------------------------------------------------|
-| 完整源代码     | full_code.py          | [直接下载](https://github.com/jianghuisu/jianghuisu.github.io/raw/main/_portfolio/pediatric-icu-files/full_code.py) |
+| 完整源代码     | full_code.py          | [直接下载](/_portfolio/pediatric-icu-files/full_code.py) |
 | 详细分析报告   | analysis_report.pdf         | [在线预览/下载](/_portfolio/pediatric-icu-files/analysis_report.pdf) |
 
 ### 资源说明
