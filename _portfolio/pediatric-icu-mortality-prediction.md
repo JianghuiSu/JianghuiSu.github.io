@@ -152,12 +152,14 @@ def shap_explanation(best_lr, best_rf, X_train, X_test, selected_features):
 
 | 资源类型       | 文件名                          | 操作链接                                                                 |
 |----------------|---------------------------------|--------------------------------------------------------------------------|
-| 完整源代码     | full_code.py          | [直接下载](/_portfolio/pediatric-icu-files/full_code.py) |
-| 详细分析报告   | analysis_report.pdf         | [在线预览/下载](/files/analysis_report.pdf) |
-| 源数据   | data.xlsx         | [在线预览/下载](/_data/data.xlsx) |
+| 源数据   | data.xlsx         | [在线预览/下载](/files/data.xlsx) |
+| 完整源代码     | full_code.py          | [在线预览/下载](/files/full_code.py) |
+| 数据分析报告   | analysis_report.pdf         | [在线预览/下载](/files/analysis_report.pdf) |
+
 
 ### 资源说明
-- 代码文件包含数据预处理、模型构建、无监督聚类、SHAP 解释等全流程代码。
-- 报告内容：包含详细的研究方法、结果解读、局限性分析等全流程细节
+- 源数据为本项目分析所用的数据
+- 代码文件包含数据预处理、模型构建、无监督聚类、SHAP 解释等全流程代码
+- 数据分析报告内容：包含详细的研究方法、结果解读、局限性分析等全流程细节
 
 ---
