@@ -152,8 +152,8 @@ def shap_explanation(best_lr, best_rf, X_train, X_test, selected_features):
 
 | 资源类型       | 文件名                          | 操作链接                                                                 |
 |----------------|---------------------------------|--------------------------------------------------------------------------|
-| 源数据   | data.xlsx         | [在线预览/下载](/files/data.xlsx) |
-| 完整源代码     | full_code.py          | [在线预览/下载](/files/full_code.py) |
+| 源数据   | data.xlsx         | [点击下载](/files/data.xlsx) |
+| 完整源代码     | full_code.py          | [点击下载](/files/full_code.py) |
 | 数据分析报告   | analysis_report.pdf         | [在线预览/下载](/files/analysis_report.pdf) |
 
 
